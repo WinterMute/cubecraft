@@ -327,7 +327,7 @@ static void apply_motion_vector(struct Vec3f motion)
     bool testX = false;
     bool testY = false;
     bool testZ = false;
-    int x, y, z;
+    int x = 0, y = 0, z = 0;
     bool collided;
     
     //Clamp fall speed to avoid tunneling problem on large falls. This should be very rare.
