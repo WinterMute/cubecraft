@@ -496,7 +496,7 @@ void file_save_world(void)
     file_log("CARD_Read returned %i", status);
     
     memset(temp, '\0', 16);
-    strncpy(temp, (char *)buffer, 32);
+    strncpy(temp, (char *)buffer, 16);
     temp[15] = '\0';
     file_log("temp is now %s", temp);
     
