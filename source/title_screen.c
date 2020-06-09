@@ -205,7 +205,7 @@ static char seedKeyboardBuffer[SEED_MAX];
 
 static bool check_if_already_exists(const char *name)
 {
-    if (!stricmp(name, nameKeyboardBuffer))
+    if (!strcasecmp(name, nameKeyboardBuffer))
     {
         menu_msgbox_init("File already exists.");
         return false;
